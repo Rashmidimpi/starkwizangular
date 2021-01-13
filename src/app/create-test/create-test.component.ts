@@ -27,7 +27,11 @@ export class CreateTestComponent implements OnInit {
     class: [''],
     subject: [''],
     no_of_question: [''],
-    level: ['']
+    level: [''],
+    module: [''],
+    duration: [''],
+    marks: [''],
+    
   });
 
   addQuestionForm = this.fb.group({

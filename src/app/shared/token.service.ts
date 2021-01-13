@@ -7,8 +7,8 @@ import { Injectable } from '@angular/core';
 export class TokenService {
 
   private issuer = {
-    login: 'http://127.0.0.1:8000/api/login',
-    register: 'http://127.0.0.1:8000/api/register'
+    login: 'https://rentopool.com/starkwiz/api/auth/login',
+    
   }
 
   constructor() { }

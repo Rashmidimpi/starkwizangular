@@ -30,6 +30,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ReviewQuizComponent } from './review-quiz/review-quiz.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     OrdersTableComponent,
     TransactionsTableComponent,
     UserListComponent,
-    CreateTestComponent
+    CreateTestComponent,
+    ReviewQuizComponent
     
   ],
   imports: [

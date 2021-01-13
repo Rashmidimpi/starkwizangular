@@ -12,6 +12,8 @@
                   <input matInput #input maxlength="10" placeholder="Test Name" formControlName="test_name">
               </mat-form-field>
 
+              
+
               <mat-form-field appearance="outline" class="formfield">
                   <mat-label>Select an Board</mat-label>
                   <mat-select disableRipple formControlName="board">
@@ -55,10 +57,32 @@
                       <mat-option value="advanced">advanced</mat-option>
                   </mat-select>
               </mat-form-field>
+
+              <mat-form-field appearance="outline" class="formfield">
+                  <mat-label>Module</mat-label>
+                  <mat-select disableRipple formControlName="module">
+                      <mat-option value="parts">Parts Of Speech</mat-option>
+                      <mat-option value="tense">Tense</mat-option>
+                      <mat-option value="voice">Voice</mat-option>
+                  </mat-select>
+              </mat-form-field>
           </mat-card-content>
+
+          <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="formfield">
+            <mat-label>Duration</mat-label>
+            <input matInput #input maxlength="10" placeholder="Duration" formControlName="duration">
+        </mat-form-field>
+
+          <mat-form-field hintLabel="Max 10 characters" appearance="outline" class="formfield">
+            <mat-label>Marks</mat-label>
+            <input matInput #input maxlength="10" placeholder="Marks" formControlName="marks">
+        </mat-form-field>
+
+         
           <mat-card-actions>
               <button mat-raised-button color="primary">Add Question</button>
           </mat-card-actions>
+          
       </form>
   </mat-card>
 </div>
@@ -73,32 +97,32 @@
           <mat-card-content>
               <mat-form-field hintLabel="Add questions " appearance="outline" class="formfield">
                   <mat-label>Question</mat-label>
-                  <input matInput #input maxlength="10" placeholder="Test Name" formControlName="question">
+                  <input matInput #input maxlength="500" placeholder="Test Name" formControlName="question">
               </mat-form-field>
 
               <mat-form-field hintLabel="Add Correct Answer" appearance="outline" class="formfield">
                   <mat-label>Correct Answer</mat-label>
-                  <input matInput #input maxlength="10" placeholder="Test Name" formControlName="correctanswer">
+                  <input matInput #input maxlength="500" placeholder="Test Name" formControlName="correctanswer">
               </mat-form-field>
 
               <mat-form-field hintLabel="Add Wrong Answer 1" appearance="outline" class="formfield">
                   <mat-label>Wrong Answer 1</mat-label>
-                  <input matInput #input maxlength="10" placeholder="Test Name" formControlName="wronganswer1">
+                  <input matInput #input maxlength="500" placeholder="Test Name" formControlName="wronganswer1">
               </mat-form-field>
 
               <mat-form-field hintLabel="Add Wrong Answer 2" appearance="outline" class="formfield">
                   <mat-label>Wrong Answer 2</mat-label>
-                  <input matInput #input maxlength="10" placeholder="Test Name" formControlName="wronganswer2">
+                  <input matInput #input maxlength="500" placeholder="Test Name" formControlName="wronganswer2">
               </mat-form-field>
 
               <mat-form-field hintLabel="Add Wrong Answer 3" appearance="outline" class="formfield">
                   <mat-label>Wrong Answer 3</mat-label>
-                  <input matInput #input maxlength="10" placeholder="Test Name" formControlName="wronganswer3">
+                  <input matInput #input maxlength="500" placeholder="Test Name" formControlName="wronganswer3">
               </mat-form-field>
 
               <mat-form-field hintLabel="Add Explanation" appearance="outline" class="formfield">
                   <mat-label>Explanation</mat-label>
-                  <input matInput #input maxlength="10" placeholder="Test Name" formControlName="explanation">
+                  <input matInput #input maxlength="500" placeholder="Test Name" formControlName="explanation">
               </mat-form-field>
           </mat-card-content>
           <mat-card-actions>

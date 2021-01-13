@@ -6,6 +6,7 @@ import { SigninComponent } from './signin/signin.component'
 import { TransactionsTableComponent } from './transactions-table/transactions-table.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { CreateTestComponent } from './create-test/create-test.component';
+import { ReviewQuizComponent } from './review-quiz/review-quiz.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -14,7 +15,7 @@ const routes: Routes = [
   { path: 'evaluation', component: CreateTestComponent },
   { path: 'orders', component: OrdersTableComponent },
   { path: 'transactions', component: TransactionsTableComponent },
-  { path: 'customers', component: UserListComponent },
+  { path: 'students', component: UserListComponent },
 ];
 
 

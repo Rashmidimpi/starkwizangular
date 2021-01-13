@@ -1,0 +1,37 @@
+<div class="example-container">
+    <mat-card class="mat-card test">
+        <mat-card-header>
+            <mat-card-title>Test details</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div>
+                <p>Test Name : {{ testdetails.test_name }}</p>
+                <p>Board : {{ testdetails.board }}</p>
+                <p>Class : {{ testdetails.class }}</p>
+                <p>level : {{ testdetails.level }}</p>
+                <p>Number of Question : {{ testdetails.no_of_question }}</p>
+                <p>subject : {{ testdetails.subject }}</p>
+            </div>
+            <mat-divider></mat-divider>
+            <div>
+                <span *ngFor="let Qlist of questionlist">
+                    <p><strong>Q:</strong> {{Qlist.question}}</p>
+                    <p><strong>Correct Answer:</strong> {{Qlist.correct_answer}}</p>
+                    <p><strong>Wrong Answer 1:</strong> {{ Qlist.wrong_answer_1 }}</p>
+                    <p><strong>Wrong Answer 2:</strong> {{ Qlist.wrong_answer_2 }}</p>
+                    <p><strong>Wrong Answer 3:</strong> {{ Qlist.wrong_answer_3 }}</p>
+                    <p><strong>Explanation:</strong> {{ Qlist.explanation }}</p>
+                    <!-- <p>subject : {{ testdetails.subject }}</p> -->
+            <mat-divider></mat-divider>
+
+                </span>
+            </div>
+        </mat-card-content>
+        <mat-card-actions>
+            <button *ngIf="is_avilable" mat-raised-button color="primary" (click)="submitTest(testdetails.test_id)"
+                disabled>Submit</button>
+            <button *ngIf="!is_avilable" mat-raised-button color="primary"
+                (click)="submitTest(testdetails.test_id)">Submit</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
